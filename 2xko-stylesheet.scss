@@ -1,0 +1,9 @@
+@use "partials/frontpage";
+@use "partials/stylesheet";
+@use "partials/comments";
+
+@import "base/2xko-stylesheet-2024-02-22";
+
+@include frontpage.styles;
+@include stylesheet.styles;
+@include comments.styles;

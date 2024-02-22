@@ -1,0 +1,18 @@
+{
+  "name": "2xko-stylesheet",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.71.1"
+  },
+  "scripts": {
+    "dev": "sass --no-source-map .:. && bun scripts/process-output-for-dev.ts",
+    "build": "sass --no-source-map .:."
+  }
+}

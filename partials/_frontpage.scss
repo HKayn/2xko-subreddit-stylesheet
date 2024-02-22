@@ -1,0 +1,132 @@
+@use "variables";
+
+@mixin styles {
+	// # header
+
+	body > .content:before {
+		display: none;
+	}
+
+	// # post column
+
+	body > .content,
+	.res.res-commentBoxes body > .content,
+	.modtools-page > div.content {
+		border: none;
+		box-shadow: none;
+		margin-top: 10px;
+		padding: 0 !important;
+		background: transparent;
+	}
+
+	.sitetable {
+		margin-right: 10px;
+		background-color: transparent;
+	}
+
+	.link,
+	.link.last-clicked {
+		border: 1px solid variables.$color-brand-off-blk;
+		border-radius: 0;
+		margin-bottom: 10px; // equals side padding of `body > .content`
+		background-color: variables.$color-brand-dark-grey;
+		box-shadow: -8px -1px 6px rgba(0, 0, 0, 0.3803921569);
+	}
+
+	.link .score {
+		color: variables.$color-brand-off-white;
+	}
+
+	.link .entry {
+		margin-right: 10px;
+		border: none;
+	}
+
+	.thing .entry.res-selected,
+	.thing .entry.res-selected .md-container {
+		background-color: variables.$color-brand-dark-grey !important;
+		border: none;
+	}
+
+	.thing a.title,
+	.search-result-header > a {
+		color: variables.$color-brand-tag-team-green;
+	}
+
+	.thing.stickied .thumbnail,
+	.link.stickied :not(.thumbnail) + .entry:before,
+	.thumbnail,
+	.thumbnail.self,
+	.link :not(.thumbnail) + .entry:before,
+	.thumbnail.default {
+		border: 1px solid variables.$color-brand-off-blk;
+	}
+
+	.link .thumbnail img {
+		border: none;
+		position: absolute;
+		top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+		// object-position and object-fit are not supported by Reddit
+	}
+
+	.panestack-title,
+	.menuarea {
+		border: none;
+		color: variables.$color-brand-off-white;
+		margin-right: 10px;
+    background: variables.$color-brand-dark-grey;
+    border: 1px solid variables.$color-brand-off-blk;
+    margin-bottom: 10px;
+	}
+
+	// # sidebar column
+
+	.morelink a:hover, .sidecontentbox a.helplink:hover, .account-activity-box a:hover {
+		text-indent: unset;
+	}
+
+	.side {
+		border: 1px solid variables.$color-brand-tag-team-green;
+	}
+
+	// # components
+
+	.flair, .linkflairlabel {
+		background-color: variables.$color-brand-off-grey;
+		color: variables.$color-brand-off-blk;
+		//display: inline-flex;
+		//align-items: center;
+
+		> :not(:last-child) {
+			margin-right: 4px;
+		}
+	}
+
+	.flair {
+		padding-right: 4px;
+	}
+
+	.drop-choices,
+	.res .RESDialogSmall:not(.livePreview),
+	.res #RESNotifications .RESNotification,
+	body #editShortcutDialog,
+	div.guider {
+		background-color: variables.$color-brand-dark-grey;
+	}
+
+	div.drop-choices {
+		padding: 0;
+	}
+
+	.hover-bubble.multi-selector label:hover,
+	.drop-choices a.choice:hover {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	.nextprev,
+	.next-suggestions {
+		color: variables.$color-brand-off-white;
+	}
+}

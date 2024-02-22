@@ -1,0 +1,50 @@
+@use "variables";
+
+@mixin styles {
+	.comments-page {
+		.link.self .entry,
+		.link.over18 .entry,
+		.link .usertext-body .md {
+			background-color: transparent;
+			color: variables.$color-brand-off-white;
+		}
+
+		.comment {
+			background-color: variables.$color-brand-dark-grey;
+			border: 1px solid variables.$color-brand-off-blk !important;
+			border-bottom: none !important;
+		}
+
+		.md {
+			color: variables.$color-brand-off-white;
+
+			blockquote p {
+				color: variables.$color-brand-off-white;
+				opacity: 0.6;
+			}
+		}
+
+		.new-comment .usertext-body,
+		.usertext.border .usertext-body {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+
+	.res.res-commentBoxes .comment {
+		background-color: variables.$color-brand-dark-grey;
+		border: 1px solid variables.$color-brand-off-blk !important;
+		border-bottom: none !important;
+	}
+
+	.sitetable {
+		border-bottom: none;
+	}
+
+	.commentarea > .sitetable {
+		border-bottom: 1px solid variables.$color-brand-off-blk;
+	}
+
+	.menuarea {
+		margin-right: 10px;
+	}
+}

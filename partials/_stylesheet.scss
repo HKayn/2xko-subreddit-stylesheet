@@ -1,0 +1,15 @@
+@use "variables";
+
+@mixin styles {
+	.stylesheet-customize-container {
+		margin-right: 10px;
+    background: variables.$color-brand-dark-grey;
+    padding: 10px;
+		box-shadow: -8px -1px 6px rgba(0, 0, 0, 0.3803921569);
+		border: 1px solid variables.$color-brand-off-blk;
+
+		h2 {
+			color: variables.$color-brand-tag-team-green;
+		}
+	}
+}
