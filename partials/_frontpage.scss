@@ -71,6 +71,14 @@
 		// object-position and object-fit are not supported by Reddit
 	}
 
+	.link .usertext-body .md {
+		margin-bottom: 0;
+		border-radius: 0;
+		padding: 10px;
+		background: variables.$color-brand-dark-grey;
+		border: 1px solid variables.$color-brand-off-blk;
+	}
+
 	.panestack-title,
 	.menuarea {
 		border: none;
