@@ -13,6 +13,6 @@
   },
   "scripts": {
     "dev": "sass --no-source-map .:. && bun scripts/process-output-for-dev.ts",
-    "build": "sass --no-source-map .:."
+    "build": "sass --no-source-map .:. && bun scripts/process-output-after-build.ts"
   }
 }
