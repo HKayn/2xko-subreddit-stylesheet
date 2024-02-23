@@ -218,6 +218,24 @@
 
 	// # components
 
+	#sr-header-area {
+		position: absolute;
+		top: -60px;
+		left: -30px;
+
+		$calcWorkaround: -60px;
+		width: calc(100% - #{$calcWorkaround});
+		// prevent Sass from optimizing the `calc(a - -b)` to `calc(a + b)`,
+		// because Reddit then breaks it by turning it into `calc(a+b)`
+
+		height: 30px;
+		border: 0;
+		background: #00000080;
+		white-space: nowrap;
+		font-size: 9px;
+		color: variables.$color-brand-tag-team-green;
+	}
+
 	.flair, .linkflairlabel {
 		background-color: variables.$color-brand-off-grey;
 		color: variables.$color-brand-off-blk;

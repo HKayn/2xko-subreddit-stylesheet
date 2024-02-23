@@ -143,19 +143,6 @@ text-transform: capitalize;
         background: url(%%menubg%%);
 	content:" "
 }
-	#sr-header-area
-{
-	position:absolute;
-	top:-60px;
-	left:-30px;
-	width:calc(100% - -60px);
-	height:30px;
-	border:0;
-        background: #00000080;
-	white-space:nowrap;
-	font-size:9px;
-	color:#CDF564 /* Formerly #32383f */
-}
 	#sr-header-area #srLeftContainer
 {
 	margin:0;
