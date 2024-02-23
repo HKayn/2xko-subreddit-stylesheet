@@ -28,6 +28,13 @@
 		.usertext.border .usertext-body {
 			background-color: rgba(255, 255, 255, 0.1);
 		}
+
+		.commentarea .menuarea {
+			border: 1px solid variables.$color-brand-off-blk;
+			margin-right: 10px;
+			padding: 10px;
+			margin-left: 0;
+		}
 	}
 
 	.res.res-commentBoxes .comment {
@@ -42,9 +49,5 @@
 
 	.commentarea > .sitetable {
 		border-bottom: 1px solid variables.$color-brand-off-blk;
-	}
-
-	.menuarea {
-		margin-right: 10px;
 	}
 }

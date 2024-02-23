@@ -1,0 +1,29 @@
+@use "variables";
+
+@mixin styles {
+	.submit-page {
+		.content > h1 {
+			margin-top: 0;
+			margin-right: 10px;
+			background-color: variables.$color-brand-dark-grey;
+			border: 1px solid variables.$color-brand-off-blk;
+			padding: 10px;
+		}
+
+		ul.tabmenu.formtab {
+			display: block;
+			padding: 10px;
+			font-size: larger;
+			margin: 10px 10px 10px 0;
+			background-color: variables.$color-brand-dark-grey;
+			border: 1px solid variables.$color-brand-off-blk;
+		}
+
+		.formtabs-content {
+			width: auto;
+			margin-right: 10px;
+			background-color: variables.$color-brand-dark-grey;
+			border: 1px solid variables.$color-brand-off-blk;
+		}
+	}
+}

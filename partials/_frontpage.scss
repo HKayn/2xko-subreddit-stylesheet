@@ -81,14 +81,139 @@
     margin-bottom: 10px;
 	}
 
+	.arrow {
+		width:25px;
+		height:25px;
+		background:url(%%spritesheet%%)!important
+	}
+
+	.arrow.up {
+		background-position: -146px -113px !important;
+		margin-left: 10px;
+	}
+
+	.arrow.upmod {
+		background-position: -110px -160px !important;
+		margin-left: 10px;
+	}
+
+	.arrow.down {
+		background-position: -179px -116px !important;
+		margin-left: 10px;
+	}
+
+	.arrow.downmod {
+		background-position: -74px -160px !important;
+		margin-left: 10px;
+	}
+
+	.link .score {
+		width: 35px;
+	}
+
+	.link .score.likes {
+		color: variables.$color-homepage-darius;
+	}
+
+	.link .score.dislikes {
+		color: variables.$color-homepage-yasuo;
+	}
+
 	// # sidebar column
+
+	.submit-link .morelink a:before,
+	.submit-text .morelink a:before {
+		background: url(%%submit%%);
+		background-repeat: no-repeat;
+		color: variables.$color-brand-off-white;
+		content:"submit a link ";
+		transition: 0.2s;
+	}
+
+	.submit-link .morelink a:hover:before,
+	.submit-text .morelink a:hover:before {
+		background: url(%%submit-hover%%);
+		color: variables.$color-brand-off-blk;
+	}
+
+	.submit-text .morelink a:before {
+		content:"submit text "
+	}
 
 	.morelink a:hover, .sidecontentbox a.helplink:hover, .account-activity-box a:hover {
 		text-indent: unset;
 	}
 
+	.side .fancy-toggle-button a.option.active,
+	#authorInfoToolTip .fancy-toggle-button a.option.active,
+	.fancy-toggle-button .add.active,
+	.res #RESHoverInfoSubscriptionButton {
+		display:inline-block;
+		vertical-align:middle;
+		border:0;
+		border-radius:0;
+		width:auto;
+		height:30px;
+		padding:0 10px;
+		background: url(%%sub%%);
+		line-height:30px;
+		text-transform:uppercase;
+		color: variables.$color-brand-off-white;
+
+		&:hover {
+			background: url(%%sub-hover%%);
+			color: variables.$color-brand-off-blk;
+		}
+	}
+
+	.fancy-toggle-button a.option.active.remove,
+	.res .res-fancy-toggle-button.remove,
+	.res .RESFilterToggle.remove {
+		background: url(%%unsub%%);
+		color: variables.$color-brand-off-white;
+
+		&:hover {
+			background: url(%%unsub-hover%%);
+			color: variables.$color-brand-off-blk;
+		}
+	}
+
 	.side {
 		border: 1px solid variables.$color-brand-tag-team-green;
+
+		.md {
+			a[href^="https://discord.gg/"]:after {
+				content: url(%%2XKODiscord%%);
+				display: block;
+				margin-left: -10px;
+			}
+
+			a[href="/SidebarTheGame"],
+			a[href="/SidebarLinks"],
+			a[href="/SidebarRules"] {
+				pointer-events: none;
+
+				&:after {
+					margin-left: -10px;
+				}
+			}
+
+			a[href="/SidebarTheGame"]:after {
+				content: url(%%SidebarTheGame%%);
+			}
+
+			a[href="/SidebarLinks"]:after {
+				content: url(%%SidebarLinks%%);
+			}
+
+			a[href="/SidebarRules"]:after {
+				content: url(%%Therules%%);
+			}
+
+			p {
+				color: variables.$color-brand-off-grey;
+			}
+		}
 	}
 
 	// # components
@@ -127,6 +252,27 @@
 
 	.nextprev,
 	.next-suggestions {
+		color: variables.$color-brand-off-white;
+	}
+
+	h2 {
+		color: variables.$color-brand-off-white !important;
+	}
+
+	.md {
+		color: variables.$color-brand-off-white;
+	}
+
+	.md a,
+	.search-result .search-result-body :link,
+	.search-result .search-result-body :link>mark {
+		color: variables.$color-brand-tag-team-green;
+		border-bottom: none;
+		transition: 0.2s;
+	}
+
+	body span.score,
+	body.res-voteEnhancements-highlightScores span.score {
 		color: variables.$color-brand-off-white;
 	}
 }

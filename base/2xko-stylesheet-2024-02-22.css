@@ -1090,19 +1090,6 @@ text-transform: capitalize;
 	font-size:10px;
 	letter-spacing:1px
 }
-.submit-link .morelink a:before
-{
-background: url(%%submit%%);
- background-repeat: no-repeat;
-	content:"submit a link "
-
-}
-.submit-text .morelink a:before
-{
-background: url(%%submitt%%);
- background-repeat: no-repeat;
-	content:"submit text "
-}
 .sidebox.submit.disabled .morelink a:before
 {
 	width:300px;
@@ -1205,19 +1192,6 @@ background: url(%%submitt%%);
 	z-index:1;
 	transition:.2s
 }
-.side .fancy-toggle-button a.option.active,#authorInfoToolTip .fancy-toggle-button a.option.active,.fancy-toggle-button .add.active,.res #RESHoverInfoSubscriptionButton
-{
-	display:inline-block;
-	vertical-align:middle;
-	border:0;
-	border-radius:0;
-	width:auto;
-	height:30px;
-	padding:0 10px;
-background: url(%%sub%%);
-	line-height:30px;
-	text-transform:uppercase
-}
 	#authorInfoToolTip .fancy-toggle-button
 {
 	margin-bottom:0
@@ -1316,10 +1290,6 @@ background: url(%%sub%%);
 .res .side .fancy-toggle-button a.option.active
 {
 	margin-top:-76px
-}
-.fancy-toggle-button a.option.active.remove,.res .res-fancy-toggle-button.remove,.res .RESFilterToggle.remove
-{
-	background: url(%%unsub%%);
 }
 .hover-bubble
 {
@@ -1863,44 +1833,6 @@ background: url(%%bgtexture%%);
 {
 	width:35px
 }
-.arrow
-{
-	width:25px;
-	height:25px;
-	background:url(%%spritesheet%%)!important
-}
-.arrow.up
-{
-	background-position:-145px -115px!important;
-margin-left: 10px;
-}
-.arrow.upmod
-{
-	background-position:-110px -160px!important;
-margin-left: 10px;
-}
-.arrow.down
-{
-	background-position:-180px -115px!important;
-margin-left: 10px;
-}
-.arrow.downmod
-{
-	background-position:-75px -160px!important;
-margin-left: 10px;
-}
-.link .score
-{
-	width:35px
-}
-.link .score.likes
-{
-	color:#ee5559
-}
-.link .score.dislikes
-{
-	color:#CDF564 /* Formerly #3a98d8 */
-}
 .thumbnail
 {
 	position:relative
@@ -2413,10 +2345,6 @@ text-transform: capitalize;
 {
 	display:none
 }
-.md
-{
-	color:#262626
-}
 	h1,h3,h4,h5,h6
 {
 	margin:10px 0;
@@ -2475,12 +2403,6 @@ text-transform: capitalize;
 	padding:5px;
 	background:#7f8d8e;
 	font-family:"Courier New ",monospace
-}
-.md a,.search-result .search-result-body :link,.search-result .search-result-body :link>mark
-{
-	border-bottom:dotted 1px rgba(255, 255, 255, 0);
-	color:#d8993a;
-	transition:.2s
 }
 .md a:hover
 {
@@ -2908,34 +2830,6 @@ text-transform: capitalize;
 {
 	background:none
 }
-.submit-page .content>h1
-{
-	margin-top:15px;
-	margin-left:0px;
-background-color: #3a3a3c; /* Formerly #c3a27b */
-}
-.formtabs-content
-{
-	width:auto;
-	border:0;
-    background-color: #ffffff;
-    border: 1px;
-    border-style: solid;
-    border-color: #ffbb9a;
-}
-
-
-.res-nightmode .formtabs-content
-{
-	width:auto;
-	border:0;
-    background-color: #535251;
-    border: 1px;
-    border-style: solid;
-    border-color: #ffbb9a;
-}
-
-
 
 .content ul.tabmenu.formtab li a
 {
@@ -2965,7 +2859,7 @@ background-color: #3a3a3c; /* Formerly #c3a27b */
 	width:auto;
 	border:0;
 	background:none;
-	color:#262626
+	color:#f1f2f1
 }
 
 .res-nightmode .roundfield {
@@ -2978,7 +2872,7 @@ background-color: #3a3a3c; /* Formerly #c3a27b */
 	letter-spacing:1px;
 	font-size:11px;
 	font-weight:700;
-	color:#262626
+	color:#f1f2f1
 }
 
 .res-nightmode .roundfield span.title {
@@ -3514,7 +3408,6 @@ body .viewSource textarea[readonly] {
 .side .md p {
     font-size: 1em;
     line-height: 1.25em;
-    color: #676565;
 }
 
 
@@ -3666,13 +3559,6 @@ a, body .generic-table, .res #srList a, #searchexpando a {
     margin-top: 126px;
 } }
 
-ul.tabmenu.formtab {
-    display: block;
-    padding-left: 10px;
-    font-size: larger;
-    margin-top: 12px;
-background-color: #3a3a3c; /* Formerly #c3a27b */
-}
 .author-tooltip__description {
     color: #f1e9dc;
     margin-top: 8px;
@@ -3688,6 +3574,7 @@ background-color: #3a3a3c; /* Formerly #c3a27b */
 /* NEWS
 -----------*/
 
+/*
 .side .md ul:first-of-type {
     font-size: 10px;
     position: absolute;
@@ -3720,8 +3607,6 @@ background-color: #3a3a3c; /* Formerly #c3a27b */
     font-size: 11px;
     position: absolute;
     top: 69px;
-    /* right: 320px; */
-     /*left: 700px;*/
     width: 242px;
     height: 133px;
     padding: 10px 20px;
@@ -3746,13 +3631,12 @@ background-color: #3a3a3c; /* Formerly #c3a27b */
 } }
 
 
-
 .side a[href='/SidebarLinks'],
 .side a[href$='/rules/#'] {
     display: block;
     margin-bottom: -45px;
 }
-
+*/
 .likes div.score.likes {
     display: block;
     margin-left: 5px;
@@ -3834,5 +3718,4 @@ background-color: #3a3a3c; /* Formerly #c3a27b */
 	letter-spacing:0.5px;
 	font-size:13px!important;
 	font-weight:700!important;
-	color:#23374b!important
 }
