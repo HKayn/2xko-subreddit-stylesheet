@@ -1,9 +1,13 @@
+@use "components/markdown-editor";
+
 @use "partials/frontpage";
 @use "partials/stylesheet";
 @use "partials/comments";
 @use "partials/submit";
 
 @import "base/2xko-stylesheet-2024-02-22";
+
+@include markdown-editor.styles;
 
 @include frontpage.styles;
 @include stylesheet.styles;

@@ -1,0 +1,58 @@
+@use "../partials/variables";
+
+@mixin styles {
+	.commentarea .usertext,
+	#newlink-with-image-upload .usertext {
+		background-color: variables.$color-brand-dark-grey;
+		margin-right: 10px;
+		margin-left: 0;
+		padding: 10px;
+		border: 1px solid variables.$color-brand-off-blk;
+
+		.markdownEditor {
+			.edit-btn:not(.btn-macro) {
+				background-color: rgb(255, 255, 255, 0.1);
+				transition: 0.2s;
+
+				&:hover {
+					background-color: rgb(255, 255, 255, 0.2);
+				}
+			}
+		}
+
+		.bottom-area .RESBigEditorPop,
+		.bottom-area .help-toggle > a,
+		.bottom-area a.reddiquette,
+		.usertext-buttons > .cancel {
+			background-color: rgb(255, 255, 255, 0.1);
+			color: variables.$color-brand-off-white;
+			border: none; 
+			margin-right: 5px;
+
+			&:hover {
+				background-color: rgb(255, 255, 255, 0.2);
+			}
+		}
+
+		.bottom-area .RESBigEditorPop {
+			border: none !important;
+			margin-right: 0;
+		}
+
+		.usertext-buttons > .save {
+			background-color: transparent;
+			color: variables.$color-brand-tag-team-green;
+			border: 1px solid variables.$color-brand-tag-team-green !important;
+			transition: 0.2s;
+
+			&:hover {
+				background-color: variables.$color-brand-tag-team-green;
+				color: variables.$color-brand-off-blk;
+			}
+		}
+	}
+
+	.commentingAs {
+		color: variables.$color-brand-off-white;
+	}
+}

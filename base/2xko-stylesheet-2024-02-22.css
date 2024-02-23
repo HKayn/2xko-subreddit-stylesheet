@@ -2939,15 +2939,11 @@ text-transform: capitalize;
 {
 	width:100%
 }
-.commentingAs
-{
-	color:#2a3939
-}
 	body .markdownEditor .edit-btn:not(.btn-macro)
 {
 	border:0;
 	background-color:#3a3a3c; /* Formerly #c3a27b */
-	background-image:url(%%editbuttons%%)
+	/*background-image:url(%%editbuttons%%)*/
 }
 	a.edit-btn
 {
@@ -2960,10 +2956,6 @@ text-transform: capitalize;
 .usertext .help-toggle,.usertext .help-toggle a,.usertext a.reddiquette
 {
 	margin-left:0;
-}
-	body:not(.res) .usertext .help-toggle a
-{
-	border-right:1px solid #fff!important
 }
 .content button.RESBigEditorPop
 {

@@ -129,6 +129,12 @@
 
 	// # sidebar column
 
+	.linkinfo,
+	.login-form-side {
+		color: variables.$color-brand-off-white;
+		border-color: variables.$color-brand-off-white;
+	}
+
 	.submit-link .morelink a:before,
 	.submit-text .morelink a:before {
 		background: url(%%submit%%);
