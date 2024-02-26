@@ -509,8 +509,8 @@ div#RESSubredditGroupDropdown ul {
 top: 116px;
     left: 78px;
     margin: 0;
-    width: 303px;
-    height: 104px;
+    width: 310px;
+    height: 91px;
     line-height: 30px;
     text-align: center;
     letter-spacing: -10px;
@@ -3283,10 +3283,6 @@ body .viewSource textarea[readonly] {
 	left:0;
 	width:100%
 }
-	#header .pagename,#header .tabmenu
-{
-	margin-top:30px
-}
 	body>.content
 {
 	margin:0!important;
@@ -3400,7 +3396,7 @@ visibility: hidden;
 .pagename a {
     display: inline-block;
     height: 91px;
-    width: 303px;
+    width: 310px;
     background: url(%%logo%%);
     vertical-align: bottom;
     text-indent: -99em;
@@ -3433,29 +3429,13 @@ visibility: hidden;
 	MOBILE FIXES
 	=======================================
 	=======================================*/
-@media (max-width: 1100px) {
-#header .tabmenu {
-    margin-top: -70px;
-} }
-
-@media (max-width: 1100px) {
-.pagename a {
-    display: inline-block;
-    height: 70px;
-    width: 203px;
-    background: url(%%mobilelogo%%);
-    vertical-align: bottom;
-    text-indent: -99em;
-}}
-
-
-@media (max-width: 1100px) {
-#header .pagename {
-    margin-top: -46px;
-    width: 203px;
-    height: 70px;
-}
-}
+	@media (max-width: 1100px) {
+		#header .pagename {
+				margin-top: -49px;
+				margin-left: -4px;
+				transform: scale(0.8);
+		}
+		}
 @media (max-width: 1100px) {
 #header #header-bottom-right {
     top: 30px;
