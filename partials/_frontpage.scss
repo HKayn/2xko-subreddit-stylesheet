@@ -196,10 +196,15 @@
 		border: 1px solid variables.$color-brand-tag-team-green;
 
 		.md {
-			a[href^="https://discord.gg/"]:after {
-				content: url(%%2XKODiscord%%);
-				display: block;
-				margin-left: -10px;
+			a[href^="https://discord.gg/"] {
+				color: transparent;
+
+				&:after {
+					content: url(%%2XKODiscord%%);
+					display: block;
+					margin-left: -10px;
+					margin-top: -1.25em; // equals line-height of h3; Discord link is expected to be inside an h3 tag
+				}
 			}
 
 			a[href="/SidebarTheGame"],
