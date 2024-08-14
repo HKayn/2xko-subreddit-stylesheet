@@ -3299,14 +3299,6 @@ body .viewSource textarea[readonly] {
 {
 	top:45px
 }
-	#header:not(:target)+.side .md>blockquote:nth-of-type(1):before
-{
-	display:block;
-	margin-bottom:10px;
-	font-weight:700;
-	color:#32383f;
-	content:"Using a mobile device? "
-}
 	#header+.side .md>blockquote:nth-of-type(1):after
 {
 	position:absolute;
