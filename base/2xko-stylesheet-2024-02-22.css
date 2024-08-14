@@ -2598,10 +2598,6 @@ text-transform: capitalize;
 {
 	display:none
 }
-.search-result :link,.search-result :link>mark
-{
-	color:#262626
-}
 .archived-infobar.with-icon:before
 {
 	background-color:transparent
