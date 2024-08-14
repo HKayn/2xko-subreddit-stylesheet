@@ -197,13 +197,14 @@
 
 		.md {
 			a[href^="https://discord.gg/"] {
-				color: transparent;
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: center;
+				font-size: 1.5em;
 
 				&:after {
 					content: url(%%2XKODiscord%%);
-					display: block;
-					margin-left: -10px;
-					margin-top: -1.25em; // equals line-height of h3; Discord link is expected to be inside an h3 tag
+					margin-bottom: 0.625em; // equals distance between link text and element below it
 				}
 			}
 
@@ -227,6 +228,85 @@
 
 			a[href="/SidebarRules"]:after {
 				content: url(%%Therules%%);
+			}
+
+			blockquote:last-child { // "Other subreddits" grid
+				margin: 0.5em 0;
+				padding: 0;
+				border: none;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+
+				> h3 {
+					box-sizing: border-box;
+					height: 75px;
+					margin: 0;
+					border: 2px solid rgba(0, 0, 0, 0.2);
+
+					&:last-child {
+						grid-column: 1 / -1;
+						width: calc(50% - 0.25em); // subtracts half the horizontal grid gap
+						margin: auto;
+					}
+
+					* {
+						display: block;
+						height: 100%;
+						width: 100%;
+					}
+
+					a {
+						padding: 1em;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						color: transparent;
+						background-position: center;
+						background-size: contain;
+						background-repeat: no-repeat;
+						font-size: 0;
+
+						&:hover {
+							background-color: rgba(255, 255, 255, 0.1);
+						}
+
+						&[href="https://www.reddit.com/r/leagueoflegends/"],
+						&[data-href-url="https://www.reddit.com/r/leagueoflegends/"] {
+							background-image: url(%%othergames-leagueoflegends%%);
+						}
+
+						&[href="https://www.reddit.com/r/VALORANT/"],
+						&[data-href-url="https://www.reddit.com/r/VALORANT/"] {
+							background-image: url(%%othergames-valorant%%);
+						}
+
+						&[href="https://www.reddit.com/r/TeamfightTactics/"],
+						&[data-href-url="https://www.reddit.com/r/TeamfightTactics/"] {
+							background-image: url(%%othergames-teamfighttactics%%);
+						}
+
+						&[href="https://www.reddit.com/r/wildrift/"],
+						&[data-href-url="https://www.reddit.com/r/wildrift/"] {
+							background-image: url(%%othergames-wildrift%%);
+						}
+
+						&[href="https://www.reddit.com/r/LegendsOfRuneterra/"],
+						&[data-href-url="https://www.reddit.com/r/LegendsOfRuneterra/"] {
+							background-image: url(%%othergames-legendsofruneterra%%);
+						}
+					}
+
+					// Styles below emulate a 0.5em grid gap, since Reddit doesn't support "gap"
+					&:nth-child(1),
+					&:nth-child(3) {
+						margin-right: 0.5em;
+						margin-bottom: 0.5em;
+					}
+					&:nth-child(2),
+					&:nth-child(4) {
+						margin-bottom: 0.5em;
+					}
+				}
 			}
 
 			p {

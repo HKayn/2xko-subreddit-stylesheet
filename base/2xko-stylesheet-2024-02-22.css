@@ -3265,10 +3265,6 @@ body .viewSource textarea[readonly] {
 	color:#262626
 }
 
-.side .md>blockquote:nth-of-type(1)
-{
-	display:none
-}
 	@media ( max-width: 1100px)
 {
 	#header
@@ -3289,23 +3285,6 @@ body .viewSource textarea[readonly] {
 	max-width:calc(100vw - 320px)!important
 }
 
-.side .md>blockquote:nth-of-type(1)
-{
-	display:block;
-	position:absolute;
-	z-index:100;
-	left:90px;
-	top:20px;
-	margin:0;
-	box-shadow:0 0 10px rgba(0,0,0,.3);
-	width:280px;
-	border:0;
-	padding:15px;
-	background:#fff;
-	text-align:center;
-	line-height:15px;
-	font-style:normal
-}
 .footer-parent
 {
 	margin-top:0;
